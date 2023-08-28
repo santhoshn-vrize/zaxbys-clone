@@ -1,0 +1,107 @@
+/* components/Navbar.module.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem a {
+  color: rgb(44, 44, 139);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.orderButton {
+  border: none;
+  border-radius: 25px; /* Use shorthand to set border radius */
+  padding: 10px 20px;
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1080px) {
+  .navList {
+    flex-direction: column; /* Change to a column layout */
+    gap: 0; /* Remove the gap */
+  }
+  
+  .navItem {
+    margin-bottom: 1rem; /* Add spacing between items */
+  }
+  
+  .orderButton {
+    width: 100%; /* Make the button full width */
+    border-radius: 25px; /* Keep the border radius */
+    margin-top: 1rem; /* Add margin at the top */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navItem a {
+    font-size: 20px; /* Reduce font size further */
+  }
+}
+
+/* components/Navbar.module.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navItem a {
+  color: rgb(44, 44, 139);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.orderButton {
+  border: none;
+  border-radius: 25px; /* Use shorthand to set border radius */
+  padding: 10px 20px;
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1080px) {
+  .navList {
+    flex-direction: column; /* Change to a column layout */
+    gap: 0; /* Remove the gap */
+  }
+  
+  .navItem {
+    margin-bottom: 1rem; /* Add spacing between items */
+  }
+  
+  .orderButton {
+    width: 100%; /* Make the button full width */
+    border-radius: 25px; /* Keep the border radius */
+    margin-top: 1rem; /* Add margin at the top */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navItem a {
+    font-size: 20px; /* Reduce font size further */
+  }
+}

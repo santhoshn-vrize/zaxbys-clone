@@ -1,0 +1,49 @@
+/* Your existing CSS code */
+
+/* Apply gradient background by default */
+.homepage_background {
+    background: linear-gradient(to bottom, #f4f4f4 50%, #001f3f 50%);
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 1080px) {
+    .homepage_background {
+      background: linear-gradient(to bottom, #f4f4f4 50%, #001f3f 50%);
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .homepage_background{
+      background: linear-gradient(to bottom, #f4f4f4 50%, #001f3f 50%);
+    }
+  }
+  
+  .menucards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .menuCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .menu-card {
+    flex-basis: calc(33.33% - 20px); /* 3 cards per row with some spacing */
+    margin: 10px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .menu-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  

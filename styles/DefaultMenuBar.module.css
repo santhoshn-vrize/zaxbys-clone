@@ -1,0 +1,53 @@
+/* components/DefaultMenuBar.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav {
+    text-align: center;
+    border: 1px solid #ccc; /* For visualization, you can remove this in your actual styling */
+    padding: 20px; /* For visualization, you can adjust this as needed */
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .menuItems {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .menuItem {
+    font-size: 18px;
+  }
+  
+  /* styles/DefaultMenuBar.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  text-align: center;
+  border: 1px solid #ccc; /* For visualization, you can remove this in your actual styling */
+  padding: 20px; /* For visualization, you can adjust this as needed */
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 1 row and 3 columns */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+.menuItem {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}

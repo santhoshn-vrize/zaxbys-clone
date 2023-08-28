@@ -9,8 +9,8 @@ const MenuCards = () => {
 
   useEffect(() => {
     const token = process.env.NEXT_PUBLIC_TOKEN; // Replace with your actual authentication token
-
-    fetch('http://localhost:1337/api/homepage-menus?populate=*', {
+    const apiUrl = process.env.NEXT_PUBLIC_HOMEPAGE_MENU; 
+    fetch(`${apiUrl}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

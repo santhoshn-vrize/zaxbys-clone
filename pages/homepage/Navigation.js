@@ -9,11 +9,11 @@ const Navbar = () => {
   const [startIndex, setStartIndex] = useState(0);
 
   const token = process.env.NEXT_PUBLIC_TOKEN;
-
+  const apiUrl = process.env.NEXT_PUBLIC_HOMEPAGE_MENU; 
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://localhost:1337/api/homepage-menus?populate=*', {
+        const response = await fetch(`${apiUrl}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

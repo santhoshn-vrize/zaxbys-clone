@@ -21,7 +21,7 @@ function MenuItemPage() {
           return;
         }
 
-        const apiUrl = `http://localhost:1337/api/${CategorySlug}?filters[$slug][$eq]=${slug}`;
+        const apiUrl = `${process.env.NEXT_PUBLIC_STRAPI_URL}/${CategorySlug}?filters[$slug][$eq]=/${slug}`;
         const token = process.env.NEXT_PUBLIC_TOKEN;
 
         const response = await fetch(apiUrl, {

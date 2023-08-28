@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 function HomePage() {
   const [menuCategories, setMenuCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const apiUrl = "http://localhost:1337/api/homepage-menus?populate=*"; // Replace with your API endpoint
+  const apiUrl = process.env.NEXT_PUBLIC_HOMEPAGE_MENU; // Replace with your API endpoint
   const token = process.env.NEXT_PUBLIC_TOKEN; // Replace with your token
 
   useEffect(() => {
